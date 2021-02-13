@@ -11,5 +11,10 @@ namespace hada_p1
         static void Main(string[] args)
         {
         }
+
+        public static double Seconds2Minutes(double s)
+        {
+            return s / 60;
+        }
     }
 }
