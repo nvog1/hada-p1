@@ -24,5 +24,10 @@ namespace hada_p1
             }
                
         }
+
+        public static double Minutes2Seconds(double m)
+        {
+            return m * 60;
+        }
     }
 }
