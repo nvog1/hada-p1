@@ -1,0 +1,8 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/hada-p1.sln
+/hada-p1/Properties
+/hada-p1/obj/Debug
+/hada-p1/hada-p1.csproj
