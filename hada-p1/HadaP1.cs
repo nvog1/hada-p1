@@ -48,7 +48,7 @@ namespace hada_p1
         /// Método que transforma de segundos a minutos
         /// </summary>
         /// <param name="s">Cantidad de segundos a convertir</param>
-        /// <returns>Cantidad de segundos convertida a minutos</returns>
+        /// <returns>Cantidad de segundos convertida a minutos.</returns>
         public static double Seconds2Minutes(double s)
         {
             if(s == 0)
@@ -66,7 +66,7 @@ namespace hada_p1
         /// Método que transforma de minutos a segundos
         /// </summary>
         /// <param name="m">Cantidad de minutos a convertir</param>
-        /// <returns>Cantidad de minutos convertida a segundos</returns>
+        /// <returns>Cantidad de minutos convertida a segundos.</returns>
         public static double Minutes2Seconds(double m)
         {
             return m * 60;
