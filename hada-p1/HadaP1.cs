@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace hada_p1
 {
     /// <summary>
-    /// Clase que contiene métodos para pasar de minutos a segundos y viceversa
+    /// Clase que contiene métodos para pasar de minutos a segundos o a horas y viceversa
     /// </summary>
     class HadaP1
     {
@@ -24,7 +24,7 @@ namespace hada_p1
 
             do
             {
-                Console.WriteLine("¿Qué unidades usas?(m/s)");
+                Console.WriteLine("¿Qué unidades usas?(m/s/h)");
                 unidades = Console.ReadLine();
 
                 Console.WriteLine("Introduce la cantidad");
@@ -33,6 +33,10 @@ namespace hada_p1
                 if(unidades == "m")
                 {
                     Console.WriteLine(str_cantidad + " minutos son {0} segundos", Minutes2Seconds(double_cantidad));
+                }
+                else if(unidades == "h")
+                {
+                    Console.WriteLine(str_cantidad + "horas son {0} minutos", Hours2Minutes(double_cantidad));
                 }
                 else
                 {
@@ -70,6 +74,16 @@ namespace hada_p1
         public static double Minutes2Seconds(double m)
         {
             return m * 60;
+        }
+
+        /// <summary>
+        /// Método que transforma de horas a minutos
+        /// </summary>
+        /// <param name="h">Cantidad de horas a convertir</param>
+        /// <returns>Cantidad de horas convertida a minutos</returns>
+        public static double Hours2Minutes(double h)
+        {
+            return h * 60;
         }
     }
 }
